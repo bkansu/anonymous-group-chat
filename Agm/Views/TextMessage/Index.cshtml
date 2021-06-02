@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserIndex.cshtml";
+}
+
+@Html.Hidden("Get", Url.Action("Get", "TextMessage"))
+@Html.Raw(TempData["msg"])
+<div class="header" style=""><center>Bu gruba ait mesajlar &nbsp;<i class="far fa-comment-dots"></i></center> </div>
+<div id="msgInfo" class="flexboxCapsule">
+    
+      
+        
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--<table class="table table-striped table-hover"  id="myMsgTable">
+  
+    <thead>
+        <tr>
+            <th scope="col">Tarih</th>        
+            <th scope="col">Gönderen</th>
+            <th scope="col">Mesaj</th>
+            <th scope="col" width="1px;"></th>
+        </tr>
+    </thead>
+    <tbody id="tblInfo" >
+       
+    </tbody>
+</table>
+-->
